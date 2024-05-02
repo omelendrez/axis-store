@@ -6,11 +6,12 @@ import { User } from './entities/user.entity';
 @Injectable()
 export class UsersService {
   create(createUserDto: CreateUserDto) {
+    console.log(createUserDto);
     return 'This action adds a new user';
   }
 
   findAll(): User[] {
-    // This should hit the respective endpoint and return the data
+    // This should hit the respective Core API endpoint and return the data
     // In this case this is just a mocked result
     return [
       {
@@ -26,6 +27,7 @@ export class UsersService {
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
+    console.log(updateUserDto);
     return `This action updates a #${id} user`;
   }
 
