@@ -12,6 +12,7 @@ export class UsersService {
 
   findAll(): User[] {
     // This should hit the respective Core API endpoint and return the data
+    // We can use fetch or axios
     // In this case this is just a mocked result
     return [
       {
